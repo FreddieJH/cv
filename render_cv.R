@@ -11,7 +11,7 @@
 library(tidyverse)
 source("CV_printing_functions.R")
 cv_data <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/14MQICF2F8-vf8CKPF1m4lyGKO6_thG-4aSwat1e2TWc",
+  data_location = "https://docs.google.com/spreadsheets/d/1LsW0_ItGjS2JQNMmwKLBfb3PvCXXPs-jOg_6fOf_i4g/edit?usp=sharing",
   cache_data = FALSE
 )
 
@@ -32,4 +32,4 @@ rmarkdown::render("cv.rmd",
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "strayer_cv.pdf")
+                       output = "heather_cv.pdf")
